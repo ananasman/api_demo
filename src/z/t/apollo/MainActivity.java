@@ -27,6 +27,8 @@ public class MainActivity extends ListActivity {
 				ProgressBarActivity.ACTION)));
 		adapter.add(new ListCellData(this, "杂项", new Intent(
 				SundriesActivity.ACTION)));
+		adapter.add(new ListCellData(this, "ActionBar", new Intent(
+				ActionBarActivity.ACTION)));
 		setListAdapter(adapter);
 	}
 
