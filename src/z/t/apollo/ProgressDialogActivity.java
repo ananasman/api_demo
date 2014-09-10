@@ -21,8 +21,8 @@ public class ProgressDialogActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				progressDialog = ProgressDialog.show(getApplicationContext(),
-						"wait", "......");
+				progressDialog = ProgressDialog.show(
+						ProgressDialogActivity.this, "wait", "......");
 				new Thread() {
 					@Override
 					public void run() {
@@ -34,7 +34,7 @@ public class ProgressDialogActivity extends Activity {
 						progressDialog.dismiss();
 						super.run();
 					}
-				};
+				}.start();
 			}
 		});
 	}

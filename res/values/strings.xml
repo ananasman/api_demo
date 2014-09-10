@@ -14,5 +14,7 @@
     <string name="title_activity_seek_bar">SeekBarActivity</string>
     <string name="title_activity_progress_bar">ProgressBarActivity</string>
     <string name="title_activity_progress_dialog">ProgressDialogActivity</string>
+    <string name="title_activity_sundries">SundriesActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
 
 </resources>
