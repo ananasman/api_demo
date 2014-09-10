@@ -19,6 +19,8 @@ public class DialogActivity extends ListActivity {
 		setListAdapter(adapter);
 		adapter.add(new ListCellData(this, "DatePickerDialog", new Intent(
 				DatePickerDialogActivity.ACTION)));
+		adapter.add(new ListCellData(this, "ProgressDialog", new Intent(
+				ProgressDialogActivity.ACTIOIN)));
 	}
 
 	@Override

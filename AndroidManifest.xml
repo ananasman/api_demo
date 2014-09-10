@@ -112,6 +112,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ProgressDialogActivity"
+            android:label="@string/title_activity_progress_dialog" >
+            <intent-filter>
+                <action android:name="z.t.apollo.ProgressDialogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -13,5 +13,6 @@
     <string name="title_activity_grid_layout">GridLayoutActivity</string>
     <string name="title_activity_seek_bar">SeekBarActivity</string>
     <string name="title_activity_progress_bar">ProgressBarActivity</string>
+    <string name="title_activity_progress_dialog">ProgressDialogActivity</string>
 
 </resources>
