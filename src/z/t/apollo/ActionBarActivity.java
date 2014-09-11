@@ -4,10 +4,12 @@ import java.util.zip.Inflater;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.View.OnClickListener;
@@ -25,7 +27,7 @@ public class ActionBarActivity extends Activity {
 		show = (Button) findViewById(R.id.btnshowactionbar);
 		hide = (Button) findViewById(R.id.btnhideactionbar);
 		actionBar = getActionBar();
-		actionBar.setDisplayShowHomeEnabled(false);
+		actionBar.setDisplayShowHomeEnabled(true);
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		show.setOnClickListener(new OnClickListener() {
 
@@ -48,5 +50,18 @@ public class ActionBarActivity extends Activity {
 		MenuInflater inflater = new MenuInflater(this);
 		inflater.inflate(R.menu.my_menu, menu);
 		return super.onCreateOptionsMenu(menu);
+	}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			startActivity(new Intent(MainActivity.ACTION));
+			this.finish();
+			break;
+
+		default:
+			break;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 }
