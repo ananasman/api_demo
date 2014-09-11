@@ -24,13 +24,16 @@ public class ActionBarActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_action_bar);
+		// 显示actionbar
 		show = (Button) findViewById(R.id.btnshowactionbar);
+		// 隐藏actionbar
 		hide = (Button) findViewById(R.id.btnhideactionbar);
 		actionBar = getActionBar();
+		// actionbar图标是否显示
 		actionBar.setDisplayShowHomeEnabled(true);
+		// actionbar图标是否可点击
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		show.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
 				actionBar.show();
@@ -51,11 +54,12 @@ public class ActionBarActivity extends Activity {
 		inflater.inflate(R.menu.my_menu, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			startActivity(new Intent(MainActivity.ACTION));
+			startActivity(new Intent(this, MainActivity.class));
 			this.finish();
 			break;
 

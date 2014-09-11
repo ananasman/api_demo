@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 public class MainActivity extends ListActivity {
 	private ArrayAdapter<ListCellData> adapter;
-	public static final String ACTION = "android.intent.action.MAIN";
+//	public static final String ACTION = "z.t.apollo.MainActivity";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
