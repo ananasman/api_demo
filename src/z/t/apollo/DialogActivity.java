@@ -17,12 +17,15 @@ public class DialogActivity extends ListActivity {
 		adapter = new ArrayAdapter<ListCellData>(this,
 				android.R.layout.simple_list_item_1);
 		setListAdapter(adapter);
-		adapter.add(new ListCellData(this, "DatePickerDialog", new Intent(
+		adapter.add(new ListCellData(this, "DatePickerDialog\n\t\t\t\tAnd\nTimePickerDialog", new Intent(
 				DatePickerDialogActivity.ACTION)));
 		adapter.add(new ListCellData(this, "ProgressDialog", new Intent(
 				ProgressDialogActivity.ACTIOIN)));
 	}
 
+	/**
+	 * 列表选项点击事件
+	 */
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		ListCellData data = adapter.getItem(position);

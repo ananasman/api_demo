@@ -17,5 +17,7 @@
     <string name="title_activity_sundries">SundriesActivity</string>
     <string name="title_activity_notification">NotificationActivity</string>
     <string name="title_activity_action_bar">ActionBarActivity</string>
+    <string name="btn_show_progress_dialog">Show ProgressDialog</string>
+    <string name="btn_show_notification">Show Notification</string>
 
 </resources>

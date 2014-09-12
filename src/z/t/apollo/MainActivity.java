@@ -10,17 +10,18 @@ import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
 	private ArrayAdapter<ListCellData> adapter;
-
-	// public static final String ACTION = "z.t.apollo.MainActivity";
-
+	/**
+	 * 返回按键的点击时间
+	 */
+	private long clicktime = 0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		adapter = new ArrayAdapter<ListCellData>(this,
 				android.R.layout.simple_list_item_1);
+		// 显式启动
 		// adapter.add(new ListCellData(this, "布局", new
-		// Intent(MainActivity.this,
-		// LayoutActivity.class)));
+		// Intent(MainActivity.this,LayoutActivity.class)));
 		// 隐式启动
 		adapter.add(new ListCellData(this, "布局", new Intent(
 				LayoutActivity.ACTION)));
@@ -35,6 +36,9 @@ public class MainActivity extends ListActivity {
 		setListAdapter(adapter);
 	}
 
+	/**
+	 * 列表选项点击事件
+	 */
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		ListCellData data = adapter.getItem(position);
@@ -42,20 +46,24 @@ public class MainActivity extends ListActivity {
 		super.onListItemClick(l, v, position, id);
 	}
 
-	private long clicktime = 0;
 
+
+	/**
+	 * 返回按键点击事件
+	 */
 	@Override
 	public void onBackPressed() {
 		if (clicktime <= 0) {
 			Toast.makeText(this, "再按一下退出", Toast.LENGTH_SHORT).show();
 			clicktime = System.currentTimeMillis();
-		}else{
+		} else {
 			long currentTime = System.currentTimeMillis();
-			if(currentTime-clicktime<1000){
+			//两次按键时间小于1秒就退出
+			if (currentTime - clicktime < 1000) {
 				finish();
-			}else{
+			} else {
 				Toast.makeText(this, "再按一下退出", Toast.LENGTH_SHORT).show();
-				clicktime=currentTime;
+				clicktime = currentTime;
 			}
 		}
 	}

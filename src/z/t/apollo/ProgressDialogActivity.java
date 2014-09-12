@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class ProgressDialogActivity extends Activity {
-	private Button button;
+	private Button btnShowProgressDialog;
 	private ProgressDialog progressDialog;
 	public static final String ACTIOIN = "z.t.apollo.ProgressDialogActivity";
 
@@ -16,8 +16,8 @@ public class ProgressDialogActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_progress_dialog);
-		button = (Button) findViewById(R.id.btnshowprogressdialog);
-		button.setOnClickListener(new OnClickListener() {
+		btnShowProgressDialog = (Button) findViewById(R.id.btnShowProgressDialog);
+		btnShowProgressDialog.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {

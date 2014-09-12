@@ -29,6 +29,9 @@ public class LayoutActivity extends ListActivity {
 				GridLayoutActivity.ACTION)));
 	}
 
+	/**
+	 * 列表选项点击事件
+	 */
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		ListCellData data = adapter.getItem(position);

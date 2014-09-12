@@ -5,13 +5,13 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <Button
-        android:id="@+id/btnshowprogressdialog"
+        android:id="@+id/btnShowProgressDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="90dp"
-        android:text="showprogressdialog" />
+        android:text="@string/btn_show_progress_dialog" />
 
 </RelativeLayout>
