@@ -2,7 +2,6 @@ package z.t.apollo;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 
 /**
  * @

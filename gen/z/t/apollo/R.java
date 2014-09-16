@@ -48,22 +48,22 @@ public final class R {
         public static final int no3=0x7f080028;
         public static final int no4=0x7f080029;
         public static final int no5=0x7f08002a;
-        public static final int progressBar1=0x7f08000e;
-        public static final int seekBar1=0x7f080010;
-        public static final int seekBar2=0x7f080011;
-        public static final int seekBar3=0x7f080012;
-        public static final int seekBar4=0x7f080013;
-        public static final int seekBar5=0x7f080014;
+        public static final int pbpercent=0x7f08000e;
+        public static final int sbpercent1=0x7f080010;
+        public static final int sbpercent2=0x7f080011;
+        public static final int sbpercent3=0x7f080012;
+        public static final int sbpercent4=0x7f080013;
+        public static final int sbpercent5=0x7f080014;
         public static final int tableRow1=0x7f080016;
         public static final int tableRow11=0x7f08001f;
         public static final int tableRow12=0x7f080023;
         public static final int tableRow6=0x7f08001a;
         public static final int textView1=0x7f080005;
-        public static final int textView111=0x7f08000f;
         public static final int textView2=0x7f080006;
         public static final int textView3=0x7f080007;
         public static final int textView4=0x7f080008;
         public static final int textView5=0x7f080009;
+        public static final int tvpercent=0x7f08000f;
     }
     public static final class layout {
         public static final int activity_action_bar=0x7f030000;

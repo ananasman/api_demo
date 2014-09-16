@@ -2,7 +2,6 @@ package z.t.apollo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
@@ -20,19 +19,19 @@ public class SeekBarActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_seek_bar);
-		seekBar1 = (SeekBar) findViewById(R.id.seekBar1);
-		seekBar2 = (SeekBar) findViewById(R.id.seekBar2);
-		seekBar3 = (SeekBar) findViewById(R.id.seekBar3);
-		seekBar4 = (SeekBar) findViewById(R.id.seekBar4);
-		seekBar5 = (SeekBar) findViewById(R.id.seekBar5);
-		progressBar = (ProgressBar) findViewById(R.id.progressBar1);
-		textView = (TextView) findViewById(R.id.textView111);
+		seekBar1 = (SeekBar) findViewById(R.id.sbpercent1);
+		seekBar2 = (SeekBar) findViewById(R.id.sbpercent2);
+		seekBar3 = (SeekBar) findViewById(R.id.sbpercent3);
+		seekBar4 = (SeekBar) findViewById(R.id.sbpercent4);
+		seekBar5 = (SeekBar) findViewById(R.id.sbpercent5);
+		progressBar = (ProgressBar) findViewById(R.id.pbpercent);
+		textView = (TextView) findViewById(R.id.tvpercent);
 		progressBar.setMax(100);
-		seekBar1.setMax(100);
-		seekBar2.setMax(100);
-		seekBar3.setMax(100);
-		seekBar4.setMax(100);
-		seekBar5.setMax(100);
+		seekBar1.setMax(20);
+		seekBar2.setMax(20);
+		seekBar3.setMax(20);
+		seekBar4.setMax(20);
+		seekBar5.setMax(20);
 		seekBar1.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 			@Override
 			public void onStopTrackingTouch(SeekBar seekBar) {
@@ -45,7 +44,7 @@ public class SeekBarActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-				progress1 = progress / 5;
+				progress1 = progress;
 				count = progress1 + progress2 + progress3 + progress4
 						+ progress5;
 				progressBar.setProgress(count);
@@ -64,7 +63,7 @@ public class SeekBarActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-				progress2 = progress / 5;
+				progress2 = progress;
 				count = progress1 + progress2 + progress3 + progress4
 						+ progress5;
 				progressBar.setProgress(count);
@@ -83,7 +82,7 @@ public class SeekBarActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-				progress3 = progress / 5;
+				progress3 = progress;
 				count = progress1 + progress2 + progress3 + progress4
 						+ progress5;
 				progressBar.setProgress(count);
@@ -102,7 +101,7 @@ public class SeekBarActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-				progress4 = progress / 5;
+				progress4 = progress;
 				count = progress1 + progress2 + progress3 + progress4
 						+ progress5;
 				progressBar.setProgress(count);
@@ -121,7 +120,7 @@ public class SeekBarActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-				progress5 = progress / 5;
+				progress5 = progress;
 				count = progress1 + progress2 + progress3 + progress4
 						+ progress5;
 				progressBar.setProgress(count);

@@ -2,8 +2,7 @@ package z.t.apollo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+
 
 public class GridLayoutActivity extends Activity {
 	public final static String ACTION = "z.t.apollo.GridLayoutActivity";

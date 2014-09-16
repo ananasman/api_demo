@@ -5,21 +5,21 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="185dp" />
+
+    <Button
         android:id="@+id/btnTimePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btnDatePicker"
         android:layout_alignBottom="@+id/btnDatePicker"
-        android:layout_marginLeft="18dp"
-        android:layout_toRightOf="@+id/btnDatePicker" />
-
-    <Button
-        android:id="@+id/btnDatePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="111dp" />
+        android:layout_marginLeft="48dp" />
 
 </RelativeLayout>

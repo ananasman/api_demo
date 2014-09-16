@@ -21,7 +21,7 @@ public class NotificationActivity extends Activity {
 		setContentView(R.layout.activity_notification);
 		btnShowNotification = (Button) findViewById(R.id.btnShowNotification);
 		manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-		// 从通知栏消除也要用刀指定的那个id
+		// 从通知栏消除也要用指定的那个id
 		manager.cancel(R.layout.activity_notification);
 		btnShowNotification.setOnClickListener(new OnClickListener() {
 
