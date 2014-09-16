@@ -25,6 +25,8 @@ public class MainActivity extends ListActivity {
 		// 隐式启动
 		adapter.add(new ListCellData(this, "布局", new Intent(
 				LayoutActivity.ACTION)));
+		adapter.add(new ListCellData(this, "UI组件（四）", new Intent(
+				AdapterViewActivity.ACTION)));
 		adapter.add(new ListCellData(this, "对话框", new Intent(
 				DialogActivity.ACTION)));
 		adapter.add(new ListCellData(this, "ProgressBar", new Intent(

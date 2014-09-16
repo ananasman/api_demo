@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="res">
+        <item>www.baidu.com</item>
+        <item>www.ea.com</item>
+        <item>www.amazon.cn</item>
+        <item>lululu.lu</item>
+        <item>qq.com</item>
+    </string-array>
+
+</resources>

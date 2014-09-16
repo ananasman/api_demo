@@ -149,6 +149,33 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AdapterViewActivity"
+            android:label="@string/title_activity_adapter_view" >
+            <intent-filter>
+                <action android:name="z.t.apollo.AdapterViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AutoCompleteTextViewActivity"
+            android:label="@string/title_activity_auto_complete_text_view" >
+            <intent-filter>
+                <action android:name="z.t.apollo.AutoCompleteTextViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ButtonActivity"
+            android:label="@string/title_activity_button" >
+            <intent-filter>
+                <action android:name="z.t.apollo.ButtonActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

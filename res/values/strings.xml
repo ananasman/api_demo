@@ -19,5 +19,10 @@
     <string name="title_activity_action_bar">ActionBarActivity</string>
     <string name="btn_show_progress_dialog">Show ProgressDialog</string>
     <string name="btn_show_notification">Show Notification</string>
+    <string name="title_activity_adapter_view">AdapterViewActivity</string>
+    <string name="title_activity_auto_complete_text_view">AutoCompleteTextViewActivity</string>
+    <string name="actv">AutoCompleteTextView</string>
+    <string name="mactv">MultiAutoCompleteTextView</string>
+    <string name="title_activity_button">ButtonActivity</string>
 
 </resources>

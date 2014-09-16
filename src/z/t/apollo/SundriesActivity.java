@@ -19,6 +19,8 @@ public class SundriesActivity extends ListActivity {
 		setListAdapter(adapter);
 		adapter.add(new ListCellData(this, "Notification", new Intent(
 				NotificationActivity.ACTION)));
+		adapter.add(new ListCellData(this, "Notification", new Intent(
+				ButtonActivity.ACTION)));
 	}
 
 	@Override
