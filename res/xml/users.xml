@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+
+    <user
+        name="小明"
+        age="3" />
+    <user
+        name="李狗蛋"
+        age="30" />
+    <user
+        name="度娘"
+        age="19" />
+
+</users>

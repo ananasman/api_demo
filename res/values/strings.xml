@@ -24,5 +24,8 @@
     <string name="actv">AutoCompleteTextView</string>
     <string name="mactv">MultiAutoCompleteTextView</string>
     <string name="title_activity_button">ButtonActivity</string>
+    <string name="exit">退出</string>
+    <string name="about">关于</string>
+    <string name="title_activity_xml">XmlActivity</string>
 
 </resources>

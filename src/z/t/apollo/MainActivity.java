@@ -1,9 +1,15 @@
 package z.t.apollo;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Intent;
+import android.database.DataSetObserver;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -14,6 +20,7 @@ public class MainActivity extends ListActivity {
 	 * 返回按键的点击时间
 	 */
 	private long clicktime = 0;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -48,8 +55,6 @@ public class MainActivity extends ListActivity {
 		super.onListItemClick(l, v, position, id);
 	}
 
-
-
 	/**
 	 * 返回按键点击事件
 	 */
@@ -60,7 +65,7 @@ public class MainActivity extends ListActivity {
 			clicktime = System.currentTimeMillis();
 		} else {
 			long currentTime = System.currentTimeMillis();
-			//两次按键时间小于1秒就退出
+			// 两次按键时间小于1秒就退出
 			if (currentTime - clicktime < 1000) {
 				finish();
 			} else {
@@ -68,5 +73,25 @@ public class MainActivity extends ListActivity {
 				clicktime = currentTime;
 			}
 		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main_option, menu);
+
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.exit:
+			finish();
+			break;
+		case R.id.about:
+			new AlertDialog.Builder(this).setTitle("关于").setMessage("当前版本 V1.0").show();
+			break;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 }

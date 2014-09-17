@@ -176,6 +176,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".XmlActivity"
+            android:label="@string/title_activity_xml" >
+            <intent-filter>
+                <action android:name="z.t.apollo.XmlActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>s
+        </activity>
     </application>
 
 </manifest>
