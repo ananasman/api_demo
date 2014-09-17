@@ -19,8 +19,10 @@ public class SundriesActivity extends ListActivity {
 		setListAdapter(adapter);
 		adapter.add(new ListCellData(this, "Notification", new Intent(
 				NotificationActivity.ACTION)));
-		adapter.add(new ListCellData(this, "Notification", new Intent(
+		adapter.add(new ListCellData(this, "按钮点击效果", new Intent(
 				ButtonActivity.ACTION)));
+		adapter.add(new ListCellData(this, "读取XML原始数据", new Intent(
+				XmlActivity.ACTION)));
 	}
 
 	@Override
