@@ -183,7 +183,25 @@
                 <action android:name="z.t.apollo.XmlActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>s
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AssetsActivity"
+            android:label="@string/title_activity_assets" >
+            <intent-filter>
+                <action android:name="z.t.apollo.AssetsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SharedPreferencesActivity"
+            android:label="@string/title_activity_shared_preferences" >
+            <intent-filter>
+                <action android:name="z.t.apollo.SharedPreferencesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

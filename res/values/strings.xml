@@ -26,6 +26,12 @@
     <string name="title_activity_button">ButtonActivity</string>
     <string name="exit">退出</string>
     <string name="about">关于</string>
+    <string name="setting">设置</string>
+    <string name="orientation">禁止横屏</string>
+    
     <string name="title_activity_xml">XmlActivity</string>
+    <string name="title_activity_assets">AssetsActivity</string>
+    <string name="title_activity_shared_preferences">SharedPreferencesActivity</string>
+    <string name="Shared_Preferences_checkBox">启动弹出Dialog</string>
 
 </resources>

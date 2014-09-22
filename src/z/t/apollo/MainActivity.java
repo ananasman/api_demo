@@ -2,10 +2,16 @@ package z.t.apollo;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -13,6 +19,7 @@ import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
 	private ArrayAdapter<ListCellData> adapter;
+	private SharedPreferences sp;
 	/**
 	 * 返回按键的点击时间
 	 */
@@ -86,7 +93,29 @@ public class MainActivity extends ListActivity {
 			finish();
 			break;
 		case R.id.about:
-			new AlertDialog.Builder(this).setTitle("关于").setMessage("当前版本 V1.0").show();
+			new AlertDialog.Builder(this).setTitle("关于")
+					.setMessage("当前版本 V1.0").show();
+			break;
+		case R.id.orientation:
+			sp = getSharedPreferences("mysp", Context.MODE_PRIVATE);
+			Log.v("a",String.valueOf(item.isChecked()));
+			item.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+				@Override
+				public boolean onMenuItemClick(MenuItem item) {
+					Editor e = sp.edit();
+					e.putBoolean("orientation", item.isChecked());
+					
+					Log.v("b",String.valueOf(item.isChecked()));
+					e.commit();
+					return false;
+				}
+			});
+			item.setChecked(sp.getBoolean("orientation", true));
+			if (item.isChecked()) {
+				Log.v("c",String.valueOf(item.isChecked()));
+				this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+			}
 			break;
 		}
 		return super.onOptionsItemSelected(item);
