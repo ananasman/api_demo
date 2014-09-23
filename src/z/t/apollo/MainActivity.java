@@ -1,5 +1,6 @@
 package z.t.apollo;
 
+import android.R.string;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Context;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
+import android.view.SubMenu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -20,6 +22,7 @@ import android.widget.Toast;
 public class MainActivity extends ListActivity {
 	private ArrayAdapter<ListCellData> adapter;
 	private SharedPreferences sp;
+	final int EXIT = 0, SETTING = 1, ABOUT = 2, ORIENTATION = 3;
 	/**
 	 * 返回按键的点击时间
 	 */
@@ -30,6 +33,7 @@ public class MainActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		adapter = new ArrayAdapter<ListCellData>(this,
 				android.R.layout.simple_list_item_1);
+		sp = getSharedPreferences("mysp", Context.MODE_PRIVATE);
 		// 显式启动
 		// adapter.add(new ListCellData(this, "布局", new
 		// Intent(MainActivity.this,LayoutActivity.class)));
@@ -46,6 +50,7 @@ public class MainActivity extends ListActivity {
 				SundriesActivity.ACTION)));
 		adapter.add(new ListCellData(this, "ActionBar", new Intent(
 				ActionBarActivity.ACTION)));
+
 		setListAdapter(adapter);
 	}
 
@@ -81,43 +86,35 @@ public class MainActivity extends ListActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.main_option, menu);
-
+		SubMenu menu2 = menu.addSubMenu(1, SETTING, 0, getResources()
+				.getString(R.string.setting).toString());
+		menu.add(0, ABOUT, 0, getResources().getString(R.string.about)
+				.toString());
+		menu.add(0, EXIT, 0, getResources().getString(R.string.exit).toString());
+		menu2.add(1, ORIENTATION, 0,
+				getResources().getString(R.string.orientation).toString())
+				.setChecked(sp.getBoolean("option", false)).setCheckable(true);
 		return super.onCreateOptionsMenu(menu);
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-		case R.id.exit:
+		case EXIT:
 			finish();
 			break;
-		case R.id.about:
+		case ABOUT:
 			new AlertDialog.Builder(this).setTitle("关于")
 					.setMessage("当前版本 V1.0").show();
 			break;
-		case R.id.orientation:
-			sp = getSharedPreferences("mysp", Context.MODE_PRIVATE);
-			Log.v("a",String.valueOf(item.isChecked()));
-			item.setOnMenuItemClickListener(new OnMenuItemClickListener() {
-
-				@Override
-				public boolean onMenuItemClick(MenuItem item) {
-					Editor e = sp.edit();
-					e.putBoolean("orientation", item.isChecked());
-					
-					Log.v("b",String.valueOf(item.isChecked()));
-					e.commit();
-					return false;
-				}
-			});
-			item.setChecked(sp.getBoolean("orientation", true));
-			if (item.isChecked()) {
-				Log.v("c",String.valueOf(item.isChecked()));
-				this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-			}
+		case ORIENTATION:
+			Editor e = sp.edit();
+			e.putBoolean("option", !item.isChecked());
+			e.commit();
+			item.setChecked(sp.getBoolean("option", false));
 			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
 }
