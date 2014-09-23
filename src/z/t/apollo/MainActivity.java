@@ -83,7 +83,7 @@ public class MainActivity extends ListActivity {
 			}
 		}
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		SubMenu menu2 = menu.addSubMenu(1, SETTING, 0, getResources()
@@ -91,6 +91,7 @@ public class MainActivity extends ListActivity {
 		menu.add(0, ABOUT, 0, getResources().getString(R.string.about)
 				.toString());
 		menu.add(0, EXIT, 0, getResources().getString(R.string.exit).toString());
+		//如果以前设置过此项则把值赋给这个选项
 		menu2.add(1, ORIENTATION, 0,
 				getResources().getString(R.string.orientation).toString())
 				.setChecked(sp.getBoolean("option", false)).setCheckable(true);
