@@ -35,5 +35,6 @@
     <string name="title_activity_file_save">FileSaveActivity</string>
     <string name="savetext">保存</string>
     <string name="editText1">Type something</string>
+    <string name="title_activity_sdsave">SDSaveActivity</string>
 
 </resources>

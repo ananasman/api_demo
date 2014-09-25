@@ -212,6 +212,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SDSaveActivity"
+            android:label="@string/title_activity_sdsave" >
+            <intent-filter>
+                <action android:name="z.t.apollo.SDSaveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
