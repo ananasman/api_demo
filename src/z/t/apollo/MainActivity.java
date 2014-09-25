@@ -1,18 +1,14 @@
 package z.t.apollo;
 
-import android.R.string;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.SubMenu;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -34,6 +30,10 @@ public class MainActivity extends ListActivity {
 		adapter = new ArrayAdapter<ListCellData>(this,
 				android.R.layout.simple_list_item_1);
 		sp = getSharedPreferences("mysp", Context.MODE_PRIVATE);
+		Editor editor = sp.edit();
+		editor.putInt("count", sp.getInt("count", 0) + 1);
+		editor.commit();
+		Toast.makeText(this, "欢迎回来，程序已启动过"+sp.getInt("count", 0)+"次", Toast.LENGTH_SHORT).show();
 		// 显式启动
 		// adapter.add(new ListCellData(this, "布局", new
 		// Intent(MainActivity.this,LayoutActivity.class)));
@@ -83,7 +83,7 @@ public class MainActivity extends ListActivity {
 			}
 		}
 	}
-	
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		SubMenu menu2 = menu.addSubMenu(1, SETTING, 0, getResources()
@@ -91,7 +91,7 @@ public class MainActivity extends ListActivity {
 		menu.add(0, ABOUT, 0, getResources().getString(R.string.about)
 				.toString());
 		menu.add(0, EXIT, 0, getResources().getString(R.string.exit).toString());
-		//如果以前设置过此项则把值赋给这个选项
+		// 如果以前设置过此项则把值赋给这个选项
 		menu2.add(1, ORIENTATION, 0,
 				getResources().getString(R.string.orientation).toString())
 				.setChecked(sp.getBoolean("option", false)).setCheckable(true);

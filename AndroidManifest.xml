@@ -203,6 +203,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FileSaveActivity"
+            android:label="@string/title_activity_file_save" >
+            <intent-filter>
+                <action android:name="z.t.apollo.FileSaveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
