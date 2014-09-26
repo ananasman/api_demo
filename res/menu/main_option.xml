@@ -17,16 +17,6 @@
                     android:checkable="true"
                     android:enabled="true"
                     android:title="@string/orientation"/>
-                <item
-                    android:id="@+id/abc"
-                    android:checkable="true"
-                    android:enabled="true"
-                    android:title="选项2"/>
-                <item
-                    android:id="@+id/abcd"
-                    android:checkable="true"
-                    android:enabled="true"
-                    android:title="选项3"/>
             </group>
         </menu>
     </item>

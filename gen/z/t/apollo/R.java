@@ -35,8 +35,6 @@ public final class R {
         public static final int Shared_Preferences_checkBox=0x7f0b001d;
         public static final int TextView01=0x7f0b0011;
         public static final int TextView03=0x7f0b0012;
-        public static final int abc=0x7f0b0037;
-        public static final int abcd=0x7f0b0038;
         public static final int about=0x7f0b0033;
         public static final int actv=0x7f0b0005;
         public static final int btnDatePicker=0x7f0b0008;
@@ -65,11 +63,11 @@ public final class R {
         public static final int ivshowpgn=0x7f0b0004;
         public static final int login=0x7f0b0020;
         public static final int mactv=0x7f0b0006;
-        public static final int no1=0x7f0b0039;
-        public static final int no2=0x7f0b003a;
-        public static final int no3=0x7f0b003b;
-        public static final int no4=0x7f0b003c;
-        public static final int no5=0x7f0b003d;
+        public static final int no1=0x7f0b0037;
+        public static final int no2=0x7f0b0038;
+        public static final int no3=0x7f0b0039;
+        public static final int no4=0x7f0b003a;
+        public static final int no5=0x7f0b003b;
         public static final int option=0x7f0b0035;
         public static final int orientation=0x7f0b0036;
         public static final int password=0x7f0b001f;
