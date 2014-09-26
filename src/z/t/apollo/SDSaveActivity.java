@@ -31,7 +31,7 @@ public class SDSaveActivity extends Activity {
 			public void onClick(View v) {
 				File dir = Environment.getExternalStorageDirectory();
 				Log.v("dir", dir.toString());
-				if (dir == null) {
+				if (dir == null||dir.toString()=="") {
 					Toast.makeText(SDSaveActivity.this, "没有sd卡",
 							Toast.LENGTH_SHORT).show();
 				}

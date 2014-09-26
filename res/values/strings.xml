@@ -36,5 +36,8 @@
     <string name="savetext">保存</string>
     <string name="editText1">Type something</string>
     <string name="title_activity_sdsave">SDSaveActivity</string>
+    <string name="title_activity_sqlite">SQLiteActivity</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
 
 </resources>

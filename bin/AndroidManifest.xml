@@ -221,6 +221,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SQLiteActivity"
+            android:label="@string/title_activity_sqlite" >
+            <intent-filter>
+                <action android:name="z.t.apollo.SQLiteActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

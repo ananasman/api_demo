@@ -25,12 +25,14 @@ public class SundriesActivity extends ListActivity {
 				XmlActivity.ACTION)));
 		adapter.add(new ListCellData(this, "SharedPreferences保存基本设置",
 				new Intent(SharedPreferencesActivity.ACTION)));
+		adapter.add(new ListCellData(this, "Assets资源访问", new Intent(
+				AssetsActivity.ACTION)));
 		adapter.add(new ListCellData(this, "内部存储", new Intent(
 				FileSaveActivity.ACTION)));
 		adapter.add(new ListCellData(this, "外部存储", new Intent(
 				SDSaveActivity.ACTION)));
-		adapter.add(new ListCellData(this, "Assets资源访问", new Intent(
-				AssetsActivity.ACTION)));
+		adapter.add(new ListCellData(this, "sqlite数据库存储", new Intent(
+				SQLiteActivity.ACTION)));
 	}
 
 	@Override
