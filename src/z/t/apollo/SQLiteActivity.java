@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -61,7 +60,7 @@ public class SQLiteActivity extends Activity implements OnClickListener {
 		String s = "";
 		SQLiteDatabase dbReader = db.getReadableDatabase();
 		Cursor cursor = dbReader.query("users", null,
-				"usernames=? and password=?", new String[] {
+				"username=? and password=?", new String[] {
 						username.getText().toString(),
 						password.getText().toString() }, null, null, null);
 		while (cursor.moveToNext()) {
