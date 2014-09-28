@@ -39,5 +39,6 @@
     <string name="title_activity_sqlite">SQLiteActivity</string>
     <string name="login">登录</string>
     <string name="register">注册</string>
+    <string name="title_activity_file_list">FileListActivity</string>
 
 </resources>
