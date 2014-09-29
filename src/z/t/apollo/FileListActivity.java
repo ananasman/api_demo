@@ -8,12 +8,11 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
-import android.content.ClipData.Item;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
@@ -24,12 +23,12 @@ import android.widget.Toast;
 
 public class FileListActivity extends Activity {
 	public final static String ACTION = "z.t.apollo.FileListActivity";
-	private Adapter adapter;
 	private ListView listView;
 	private TextView textView;
 	private File currentParent;
 	private Button button;
 	File[] currentFiles;
+	// 获取sd卡路径
 	final String path = Environment.getExternalStorageDirectory().toString();
 
 	@Override
@@ -39,6 +38,7 @@ public class FileListActivity extends Activity {
 		listView = (ListView) findViewById(R.id.fileslist);
 		textView = (TextView) findViewById(R.id.tvfilepath);
 		File root = new File(path);
+		// 判断路径是否存在
 		if (root.exists()) {
 			currentParent = root;
 			currentFiles = root.listFiles();
@@ -49,18 +49,32 @@ public class FileListActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				if (currentFiles[position].isFile())
-					return;
-				File[] tmp = currentFiles[position].listFiles();
-				if (tmp == null || tmp.length == 0) {
-					Toast.makeText(FileListActivity.this, "当前路径不可访问或该路径下没有文件",
+				if (currentFiles[position].isFile()) {
+					Toast.makeText(
+							FileListActivity.this,
+							"选中了" + currentFiles[position].getName().toString()
+									+ "路径是" + currentFiles[position],
 							Toast.LENGTH_SHORT).show();
+					Intent intent = new Intent(SDSaveActivity.ACTION);
+					intent.putExtra("path", currentFiles[position]);
+					startActivity(intent);
+					finish();
 				} else {
-					currentParent = currentFiles[position];
-					currentFiles = tmp;
-					inflateListView(currentFiles);
-				}
+					File[] tmp = currentFiles[position].listFiles();
+					if (tmp == null || tmp.length == 0) {
+						// Toast.makeText(
+						// FileListActivity.this,
+						// Environment.getExternalStorageDirectory()
+						// .toString(), Toast.LENGTH_SHORT).show();
+						Toast.makeText(FileListActivity.this,
+								"当前路径不可访问或该路径下没有文件", Toast.LENGTH_SHORT).show();
+					} else {
+						currentParent = currentFiles[position];
+						currentFiles = tmp;
+						inflateListView(currentFiles);
+					}
 
+				}
 			}
 		});
 		button = (Button) findViewById(R.id.btnroot);
@@ -69,10 +83,13 @@ public class FileListActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				try {
-					if (currentParent.getCanonicalPath().equals(path)) {
+					if (!currentParent.getCanonicalPath().equals(path)) {
 						currentParent = currentParent.getParentFile();
 						currentFiles = currentParent.listFiles();
 						inflateListView(currentFiles);
+					} else {
+						Toast.makeText(FileListActivity.this, "已是根目录", 0)
+								.show();
 					}
 				} catch (IOException e) {
 					e.printStackTrace();
