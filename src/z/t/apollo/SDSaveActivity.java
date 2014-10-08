@@ -25,9 +25,10 @@ import android.widget.Toast;
 public class SDSaveActivity extends Activity {
 	private Button button;
 	private EditText editText, editText2;
-	public final static String ACTION = "z.t.apollo.SDSaveActivity";
+//	public final static String ACTION = "z.t.apollo.SDSaveActivity";
+	public final static String ACTION = "android.intent.action.GET_CONTENT";
 	final int list = 1;
-	File targetfile;
+	File targetfile = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,8 @@ public class SDSaveActivity extends Activity {
 		});
 		Intent intent = getIntent();
 		String path = intent.getStringExtra("path");
-		if (!path.equals(null) || path != "") {
+		System.out.println("path的值：" + path);
+		if (path != null && path != "") {
 			targetfile = new File(path);
 			try {
 				InputStream instream = new FileInputStream(targetfile);

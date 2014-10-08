@@ -29,8 +29,10 @@ public class SundriesActivity extends ListActivity {
 				AssetsActivity.ACTION)));
 		adapter.add(new ListCellData(this, "内部存储", new Intent(
 				FileSaveActivity.ACTION)));
-		adapter.add(new ListCellData(this, "外部存储", new Intent(
-				SDSaveActivity.ACTION)));
+		adapter.add(new ListCellData(this, "外部存储", new Intent(this,
+				SDSaveActivity.class)));
+		adapter.add(new ListCellData(this, "文件列表", new Intent(
+				FileListActivity.ACTION)));
 		adapter.add(new ListCellData(this, "sqlite数据库存储", new Intent(
 				SQLiteActivity.ACTION)));
 	}
