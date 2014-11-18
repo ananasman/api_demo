@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="z.t.apollo"
+    package="z.t.apollo.activity"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -30,7 +30,7 @@
             android:name=".LayoutActivity"
             android:label="@string/title_activity_layout" >
             <intent-filter>
-                <action android:name="z.t.apollo.LayoutActivity" />
+                <action android:name="z.t.apollo.activity.LayoutActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -39,7 +39,7 @@
             android:name=".LinearLayoutActivity"
             android:label="@string/title_activity_linear_layout" >
             <intent-filter>
-                <action android:name="z.t.apollo.LinearLayoutActivity" />
+                <action android:name="z.t.apollo.activity.LinearLayoutActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -48,7 +48,7 @@
             android:name=".RelativeLayoutActivity"
             android:label="@string/title_activity_relative_layout" >
             <intent-filter>
-                <action android:name="z.t.apollo.RelativeLayoutActivity" />
+                <action android:name="z.t.apollo.activity.RelativeLayoutActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -57,7 +57,7 @@
             android:name=".DialogActivity"
             android:label="@string/title_activity_dialog" >
             <intent-filter>
-                <action android:name="z.t.apollo.DialogActivity" />
+                <action android:name="z.t.apollo.activity.DialogActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -66,7 +66,7 @@
             android:name=".DatePickerDialogActivity"
             android:label="@string/title_activity_date_picker_dialog" >
             <intent-filter>
-                <action android:name="z.t.apollo.DatePickerDialogActivity" />
+                <action android:name="z.t.apollo.activity.DatePickerDialogActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -75,7 +75,7 @@
             android:name=".TableLayoutActivity"
             android:label="@string/title_activity_table_layout" >
             <intent-filter>
-                <action android:name="z.t.apollo.TableLayoutActivity" />
+                <action android:name="z.t.apollo.activity.TableLayoutActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -84,7 +84,7 @@
             android:name=".FrameLayoutActivity"
             android:label="@string/title_activity_frame_layout" >
             <intent-filter>
-                <action android:name="z.t.apollo.FrameLayoutActivity" />
+                <action android:name="z.t.apollo.activity.FrameLayoutActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -93,7 +93,7 @@
             android:name=".GridLayoutActivity"
             android:label="@string/title_activity_grid_layout" >
             <intent-filter>
-                <action android:name="z.t.apollo.GridLayoutActivity" />
+                <action android:name="z.t.apollo.activity.GridLayoutActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -102,7 +102,7 @@
             android:name=".SeekBarActivity"
             android:label="@string/title_activity_seek_bar" >
             <intent-filter>
-                <action android:name="z.t.apollo.SeekBarActivity" />
+                <action android:name="z.t.apollo.activity.SeekBarActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -111,7 +111,7 @@
             android:name=".ProgressBarActivity"
             android:label="@string/title_activity_progress_bar" >
             <intent-filter>
-                <action android:name="z.t.apollo.ProgressBarActivity" />
+                <action android:name="z.t.apollo.activity.ProgressBarActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -120,7 +120,7 @@
             android:name=".ProgressDialogActivity"
             android:label="@string/title_activity_progress_dialog" >
             <intent-filter>
-                <action android:name="z.t.apollo.ProgressDialogActivity" />
+                <action android:name="z.t.apollo.activity.ProgressDialogActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -129,7 +129,7 @@
             android:name=".SundriesActivity"
             android:label="@string/title_activity_sundries" >
             <intent-filter>
-                <action android:name="z.t.apollo.SundriesActivity" />
+                <action android:name="z.t.apollo.activity.SundriesActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -138,7 +138,7 @@
             android:name=".NotificationActivity"
             android:label="@string/title_activity_notification" >
             <intent-filter>
-                <action android:name="z.t.apollo.NotificationActivity" />
+                <action android:name="z.t.apollo.activity.NotificationActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -147,7 +147,7 @@
             android:name=".ActionBarActivity"
             android:label="@string/title_activity_action_bar" >
             <intent-filter>
-                <action android:name="z.t.apollo.ActionBarActivity" />
+                <action android:name="z.t.apollo.activity.ActionBarActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -156,7 +156,7 @@
             android:name=".AdapterViewActivity"
             android:label="@string/title_activity_adapter_view" >
             <intent-filter>
-                <action android:name="z.t.apollo.AdapterViewActivity" />
+                <action android:name="z.t.apollo.activity.AdapterViewActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -165,7 +165,7 @@
             android:name=".AutoCompleteTextViewActivity"
             android:label="@string/title_activity_auto_complete_text_view" >
             <intent-filter>
-                <action android:name="z.t.apollo.AutoCompleteTextViewActivity" />
+                <action android:name="z.t.apollo.activity.AutoCompleteTextViewActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -174,7 +174,7 @@
             android:name=".ButtonActivity"
             android:label="@string/title_activity_button" >
             <intent-filter>
-                <action android:name="z.t.apollo.ButtonActivity" />
+                <action android:name="z.t.apollo.activity.ButtonActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -183,7 +183,7 @@
             android:name=".XmlActivity"
             android:label="@string/title_activity_xml" >
             <intent-filter>
-                <action android:name="z.t.apollo.XmlActivity" />
+                <action android:name="z.t.apollo.activity.XmlActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -192,7 +192,7 @@
             android:name=".AssetsActivity"
             android:label="@string/title_activity_assets" >
             <intent-filter>
-                <action android:name="z.t.apollo.AssetsActivity" />
+                <action android:name="z.t.apollo.activity.AssetsActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -201,7 +201,7 @@
             android:name=".SharedPreferencesActivity"
             android:label="@string/title_activity_shared_preferences" >
             <intent-filter>
-                <action android:name="z.t.apollo.SharedPreferencesActivity" />
+                <action android:name="z.t.apollo.activity.SharedPreferencesActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -210,7 +210,7 @@
             android:name=".FileSaveActivity"
             android:label="@string/title_activity_file_save" >
             <intent-filter>
-                <action android:name="z.t.apollo.FileSaveActivity" />
+                <action android:name="z.t.apollo.activity.FileSaveActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -233,7 +233,7 @@
             android:name=".SQLiteActivity"
             android:label="@string/title_activity_sqlite" >
             <intent-filter>
-                <action android:name="z.t.apollo.SQLiteActivity" />
+                <action android:name="z.t.apollo.activity.SQLiteActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -242,7 +242,14 @@
             android:name=".FileListActivity"
             android:label="@string/title_activity_file_list" >
             <intent-filter>
-                <action android:name="z.t.apollo.FileListActivity" />
+                <action android:name="z.t.apollo.activity.FileListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabNavActivity" >
+            <intent-filter>
+                <action android:name="z.t.apollo.activity.TabNavActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
