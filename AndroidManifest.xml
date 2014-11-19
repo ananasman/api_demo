@@ -254,6 +254,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BaseSampleActivity"
+            android:label="@string/title_activity_base_sample" >
+        </activity>
     </application>
 
 </manifest>

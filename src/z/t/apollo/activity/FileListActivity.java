@@ -10,7 +10,6 @@ import java.util.Map;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -96,7 +95,7 @@ public class FileListActivity extends Activity {
 						currentFiles = currentParent.listFiles();
 						inflateListView(currentFiles);
 					} else {
-						Toast.makeText(FileListActivity.this, "已是根目录", 0)
+						Toast.makeText(FileListActivity.this, "已是根目录", Toast.LENGTH_SHORT)
 								.show();
 					}
 				} catch (IOException e) {
