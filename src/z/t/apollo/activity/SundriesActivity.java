@@ -38,6 +38,8 @@ public class SundriesActivity extends ListActivity {
 				SQLiteActivity.ACTION)));
 		adapter.add(new ListCellData(this, "Tab导航", new Intent(
 				TabNavActivity.ACTION)));
+		adapter.add(new ListCellData(this, "ListView下拉刷新", new Intent(
+				ListviewRefresActivity.ACTION)));
 	}
 
 	@Override

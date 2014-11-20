@@ -258,6 +258,15 @@
             android:name=".BaseSampleActivity"
             android:label="@string/title_activity_base_sample" >
         </activity>
+        <activity
+            android:name=".ListviewRefresActivity"
+            android:label="@string/title_activity_listview_refres" >
+            <intent-filter>
+                <action android:name="z.t.apollo.activity.ListviewRefresActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

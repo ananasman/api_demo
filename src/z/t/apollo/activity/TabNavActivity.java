@@ -18,7 +18,9 @@ public class TabNavActivity extends BaseSampleActivity {
 		mPager = (ViewPager) findViewById(R.id.pager);
 		mPager.setAdapter(mAdapter);
 		mIndicator = (PageIndicator) findViewById(R.id.indicator);
-		mIndicator.setViewPager(mPager);
-		mIndicator.setCurrentItem(mAdapter.getCount() - 1);
+		// mIndicator.setViewPager(mPager);
+		// mIndicator.setCurrentItem(mAdapter.getCount() - 1);
+		// 设置viewpaget同时设置初识位置
+		mIndicator.setViewPager(mPager, 0);
 	}
 }
