@@ -14,6 +14,7 @@ public class FragmentAdapter extends FragmentPagerAdapter implements
 	static final String[] CONTENT = new String[] { "wp之家", "win10之家", };
 
 	private int mCount = CONTENT.length;
+
 	public FragmentAdapter(FragmentManager fm) {
 		super(fm);
 	}
@@ -26,7 +27,8 @@ public class FragmentAdapter extends FragmentPagerAdapter implements
 	@Override
 	public Fragment getItem(int arg0) {
 		// 想不通在什么情况下arg0会等于CONTENT.length
-		return MyFragment.newInstance(CONTENT[arg0 % CONTENT.length]);
+//		 return MyFragment.newInstance(CONTENT[arg0 % CONTENT.length]);
+		 return MyFragment.newInstance(CONTENT[arg0 % CONTENT.length]);
 	}
 
 	@Override
