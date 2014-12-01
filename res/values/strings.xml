@@ -47,5 +47,9 @@
     <string name="title_activity_looo">LoooActivity</string>
     <string name="title_activity_base_sample">BaseSampleActivity</string>
     <string name="title_activity_listview_refres">ListviewRefresActivity</string>
+    <string name="title_activity_sensor">SensorActivity</string>
+    <string name="title_activity_motion_sersor">MotionSersorActivity</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

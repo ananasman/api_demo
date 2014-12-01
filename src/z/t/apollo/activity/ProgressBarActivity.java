@@ -1,6 +1,6 @@
 package z.t.apollo.activity;
 
-import z.t.apollo.activity.utils.ListCellData;
+import z.t.apollo.utils.ListCellData;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;

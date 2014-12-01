@@ -1,4 +1,4 @@
-package z.t.apollo.activity.utils;
+package z.t.apollo.utils;
 
 import android.content.Context;
 import android.content.Intent;

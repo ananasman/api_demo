@@ -1,6 +1,6 @@
 package z.t.apollo.activity;
 
-import z.t.apollo.activity.utils.ListCellData;
+import z.t.apollo.utils.ListCellData;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Context;
@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
@@ -34,7 +35,8 @@ public class MainActivity extends ListActivity {
 		Editor editor = sp.edit();
 		editor.putInt("count", sp.getInt("count", 0) + 1);
 		editor.commit();
-		Toast.makeText(this, "欢迎回来，程序已启动过"+sp.getInt("count", 0)+"次", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "欢迎回来，程序已启动过" + sp.getInt("count", 0) + "次",
+				Toast.LENGTH_SHORT).show();
 		// 显式启动
 		// adapter.add(new ListCellData(this, "布局", new
 		// Intent(MainActivity.this,LayoutActivity.class)));
@@ -49,9 +51,12 @@ public class MainActivity extends ListActivity {
 				ProgressBarActivity.ACTION)));
 		adapter.add(new ListCellData(this, "杂项", new Intent(
 				SundriesActivity.ACTION)));
+		adapter.add(new ListCellData(this, "传感器", new Intent(
+				SensorActivity.ACTION)));
 		adapter.add(new ListCellData(this, "ActionBar", new Intent(
 				ActionBarActivity.ACTION)));
-
+		adapter.add(new ListCellData(this, "Fragment", new Intent(
+				FragmentActivity.ACTION)));
 		setListAdapter(adapter);
 	}
 

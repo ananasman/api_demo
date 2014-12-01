@@ -1,10 +1,7 @@
-package z.t.apollo.activity.utils;
+package z.t.apollo.utils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,10 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
-import android.webkit.WebView.FindListener;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
 public class MyFragment extends Fragment {
 	private static final String KEY_CONTENT = "MyFragment:Content";
@@ -60,6 +57,7 @@ public class MyFragment extends Fragment {
 				android.R.layout.simple_list_item_1, mContent);
 		mListView.setAdapter(adapter);
 		mListView.setPadding(10, 0, 10, 0);
+
 		LinearLayout layout = new LinearLayout(getActivity());
 		layout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
 				LayoutParams.MATCH_PARENT));
@@ -73,6 +71,9 @@ public class MyFragment extends Fragment {
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		// outState.putString(KEY_CONTENT, mContent);
+		Log.v("",
+				outState.getString(KEY_CONTENT) + " "
+						+ outState.getString(getTag()));
 		outState.putStringArrayList(KEY_CONTENT, (ArrayList<String>) mContent);
 	}
 }

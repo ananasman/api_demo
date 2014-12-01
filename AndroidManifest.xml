@@ -267,6 +267,33 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SensorActivity"
+            android:label="@string/title_activity_sensor" >
+            <intent-filter>
+                <action android:name="z.t.apollo.activity.SensorActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MotionSensorActivity"
+            android:label="@string/title_activity_motion_sersor" >
+            <intent-filter>
+                <action android:name="z.t.apollo.activity.MotionSersorActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentActivity"
+            android:label="@string/title_activity_fragment" >
+            <intent-filter>
+                <action android:name="z.t.apollo.activity.FragmentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

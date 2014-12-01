@@ -1,6 +1,6 @@
 package z.t.apollo.activity;
 
-import z.t.apollo.activity.utils.Db;
+import z.t.apollo.utils.Db;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.database.Cursor;
