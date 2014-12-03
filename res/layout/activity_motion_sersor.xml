@@ -8,30 +8,20 @@
     android:orientation="vertical"
     android:showDividers="middle" >
 
-    <!--
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-    -->
-    <fragment
+    <LinearLayout
         android:id="@+id/sensor_list"
-        android:name="z.t.apollo.fragment.BookListFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/sensor_detail_container"
+    <LinearLayout
+        android:id="@+id/sensor_detil"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3" >
-    </FrameLayout>
+        android:layout_weight="3"
+        android:orientation="vertical" >
+    </LinearLayout>
 
 </LinearLayout>
