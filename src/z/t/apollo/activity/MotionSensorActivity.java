@@ -34,34 +34,40 @@ public class MotionSensorActivity extends Activity implements
 		manager = (SensorManager) getSystemService(SENSOR_SERVICE);
 		List<Sensor> sensors = manager.getSensorList(Sensor.TYPE_ALL);
 		// 创建传感器列表资源
-		String[] str = new String[sensors.size()];
+//		String[] str = new String[sensors.size()];
+		String[] str = new String[5];
 		// Sensor[] str = new Sensor[sensors.size()];
 		for (Sensor sensor : sensors) {
 			switch (sensor.getType()) {
 			case Sensor.TYPE_ACCELEROMETER:
-				// str[sensors.indexOf(sensor)] = "加速度传感器";
+//				str[sensors.indexOf(sensor)] = "加速度传感器";
+				str[0] = "加速度传感器";
 				break;
 			case Sensor.TYPE_LIGHT:
-				// str[sensors.indexOf(sensor)] = "光线传感器";
+//				str[sensors.indexOf(sensor)] = "光线传感器";
+				str[1] = "光线传感器";
 				break;
 			case Sensor.TYPE_GRAVITY:
-				// str[sensors.indexOf(sensor)] = "重力传感器";
+//				str[sensors.indexOf(sensor)] = "重力传感器";
+				str[2] = "重力传感器";
 				break;
 			case Sensor.TYPE_LINEAR_ACCELERATION:
-				// str[sensors.indexOf(sensor)] = "线性加速传感器";
+//				str[sensors.indexOf(sensor)] = "线性加速传感器";
+				str[3] = "线性加速传感器";
 				break;
-			case Sensor.TYPE_SIGNIFICANT_MOTION:
-				// str[sensors.indexOf(sensor)] = "SIGNIFICANT_MOTION";
-				break;
-			case Sensor.TYPE_GAME_ROTATION_VECTOR:
-				// str[sensors.indexOf(sensor)] = "GAME_ROTATION_VECTOR";
-				break;
+//			case Sensor.TYPE_SIGNIFICANT_MOTION:
+//				str[sensors.indexOf(sensor)] = "SIGNIFICANT_MOTION";
+//				break;
+//			case Sensor.TYPE_GAME_ROTATION_VECTOR:
+//				str[sensors.indexOf(sensor)] = "GAME_ROTATION_VECTOR";
+//				break;
 			case Sensor.TYPE_ORIENTATION:
-				// str[sensors.indexOf(sensor)] = "方向传感器";
+//				str[sensors.indexOf(sensor)] = "方向传感器";
+				str[4] = "方向传感器";
 				break;
-			default:
-				// str[sensors.indexOf(sensor)] = sensor.getName();
-				break;
+			// default:
+			// str[sensors.indexOf(sensor)] = sensor.getName();
+			// break;
 			}
 			System.out.println(sensor.toString());
 			// str[sensors.indexOf(sensor)] = sensor.getName();
@@ -99,9 +105,19 @@ public class MotionSensorActivity extends Activity implements
 	}
 
 	@Override
-	public void showDetil() {
-		getFragmentManager().beginTransaction()
-				.replace(R.id.sensor_detil, new SensorDetilFragment()).commit();
+	public void showDetil(int position) {
+
+		fragmentManager = getFragmentManager();
+		transaction = fragmentManager.beginTransaction();
+		SensorDetilFragment detilFragment = new SensorDetilFragment();
+		Bundle bundle = new Bundle();
+		bundle.putInt("position", position);
+		detilFragment.setArguments(bundle);
+		transaction.replace(R.id.sensor_detil, detilFragment);
+		transaction.commit();
+
+		// getFragmentManager().beginTransaction()
+		// .replace(R.id.sensor_detil, new SensorDetilFragment()).commit();
 
 	}
 

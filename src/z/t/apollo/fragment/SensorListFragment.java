@@ -47,7 +47,7 @@ public class SensorListFragment extends Fragment {
 			data.add(map);
 		}
 		SimpleAdapter adapter = new SimpleAdapter(getActivity(), data,
-				android.R.layout.simple_list_item_1, new String[] { "sensor" },
+				R.layout.list_item, new String[] { "sensor" },
 				new int[] { android.R.id.text1 });
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(new OnItemClickListener() {
@@ -55,7 +55,7 @@ public class SensorListFragment extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				mCallBack.showDetil();
+				mCallBack.showDetil(position);
 			}
 		});
 	}
@@ -90,6 +90,6 @@ public class SensorListFragment extends Fragment {
 	}
 
 	public interface CallBack {
-		public void showDetil();
+		public void showDetil(int position);
 	}
 }

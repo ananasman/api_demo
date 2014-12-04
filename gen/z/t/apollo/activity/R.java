@@ -461,6 +461,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int default_title_indicator_selected_color=0x7f09000e;
         public static final int default_title_indicator_text_color=0x7f09000f;
         public static final int default_underline_indicator_selected_color=0x7f090010;
+        public static final int red=0x7f090016;
         public static final int vpi__background_holo_dark=0x7f090000;
         public static final int vpi__background_holo_light=0x7f090001;
         public static final int vpi__bright_foreground_disabled_holo_dark=0x7f090004;
@@ -469,8 +470,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vpi__bright_foreground_holo_light=0x7f090003;
         public static final int vpi__bright_foreground_inverse_holo_dark=0x7f090006;
         public static final int vpi__bright_foreground_inverse_holo_light=0x7f090007;
-        public static final int vpi__dark_theme=0x7f090016;
-        public static final int vpi__light_theme=0x7f090017;
+        public static final int vpi__dark_theme=0x7f090017;
+        public static final int vpi__light_theme=0x7f090018;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -670,12 +671,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_table_layout=0x7f030017;
         public static final int fragment_book_detail=0x7f030018;
         public static final int line=0x7f030019;
-        public static final int login=0x7f03001a;
-        public static final int need_this_for_maven=0x7f03001b;
-        public static final int pull_to_refresh_header_horizontal=0x7f03001c;
-        public static final int pull_to_refresh_header_vertical=0x7f03001d;
-        public static final int sensor_detil=0x7f03001e;
-        public static final int sensor_list=0x7f03001f;
+        public static final int list_item=0x7f03001a;
+        public static final int login=0x7f03001b;
+        public static final int need_this_for_maven=0x7f03001c;
+        public static final int pull_to_refresh_header_horizontal=0x7f03001d;
+        public static final int pull_to_refresh_header_vertical=0x7f03001e;
+        public static final int sensor_detil=0x7f03001f;
+        public static final int sensor_list=0x7f030020;
     }
     public static final class menu {
         public static final int main_option=0x7f0e0000;
