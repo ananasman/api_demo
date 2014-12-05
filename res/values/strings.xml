@@ -51,5 +51,6 @@
     <string name="title_activity_motion_sersor">MotionSersorActivity</string>
     <string name="title_activity_fragment">FragmentActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
 
 </resources>
