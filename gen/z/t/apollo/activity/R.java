@@ -671,14 +671,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_tab_nav=0x7f030017;
         public static final int activity_table_layout=0x7f030018;
         public static final int fragment_book_detail=0x7f030019;
-        public static final int line=0x7f03001a;
-        public static final int list_item=0x7f03001b;
-        public static final int login=0x7f03001c;
-        public static final int need_this_for_maven=0x7f03001d;
-        public static final int pull_to_refresh_header_horizontal=0x7f03001e;
-        public static final int pull_to_refresh_header_vertical=0x7f03001f;
-        public static final int sensor_detil=0x7f030020;
-        public static final int sensor_list=0x7f030021;
+        public static final int left_menu=0x7f03001a;
+        public static final int line=0x7f03001b;
+        public static final int list_item=0x7f03001c;
+        public static final int login=0x7f03001d;
+        public static final int need_this_for_maven=0x7f03001e;
+        public static final int pull_to_refresh_header_horizontal=0x7f03001f;
+        public static final int pull_to_refresh_header_vertical=0x7f030020;
+        public static final int sensor_detil=0x7f030021;
+        public static final int sensor_list=0x7f030022;
     }
     public static final class menu {
         public static final int main_option=0x7f0e0000;
