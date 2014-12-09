@@ -1,8 +1,8 @@
 package z.t.apollo.activity;
 
+import android.os.Bundle;
 import z.t.apollo.fragment.LeftMenuFragment;
 import z.t.apollo.utils.MainUI;
-import android.os.Bundle;
 
 public class MenuActivity extends android.support.v4.app.FragmentActivity {
 	public static final String ACTION = "z.t.apollo.activity.MenuActivity";
@@ -15,6 +15,8 @@ public class MenuActivity extends android.support.v4.app.FragmentActivity {
 		mainUI = new MainUI(this);
 		setContentView(mainUI);
 		leftMenu = new LeftMenuFragment();
-//getSupportFragmentManager().beginTransaction().add(777, leftMenu);
+		getSupportFragmentManager().beginTransaction().add(MainUI.LEFT_ID,
+				leftMenu);
+
 	}
 }
