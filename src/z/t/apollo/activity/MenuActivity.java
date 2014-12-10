@@ -13,10 +13,10 @@ public class MenuActivity extends android.support.v4.app.FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mainUI = new MainUI(this);
+		getActionBar().hide();// 隐藏掉整个ActionBar，包括下面的Tabs
 		setContentView(mainUI);
 		leftMenu = new LeftMenuFragment();
-		getSupportFragmentManager().beginTransaction().add(MainUI.LEFT_ID,
-				leftMenu);
-
+		getSupportFragmentManager().beginTransaction()
+				.add(MainUI.LEFT_ID, leftMenu).commit();
 	}
 }

@@ -18,6 +18,8 @@ public class LeftMenuFragment extends Fragment {
 				new OnClickListener() {
 					@Override
 					public void onClick(View v) {
+						System.out
+								.println("WHAT happens...never fart on anyone's balls.");
 						Toast.makeText(getActivity(), "被点击了",
 								Toast.LENGTH_SHORT).show();
 					}
