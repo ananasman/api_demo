@@ -37,9 +37,9 @@ public class MainUI extends FrameLayout {
 		middleMenu = new FrameLayout(context);
 		middleMask = new FrameLayout(context);
 		rightMenu = new FrameLayout(context);
-		leftMenu.setBackgroundColor(Color.CYAN);
-		middleMenu.setBackgroundColor(Color.BLUE);
-		rightMenu.setBackgroundColor(Color.CYAN);
+		leftMenu.setBackgroundColor(Color.rgb(204, 255, 204));
+		middleMenu.setBackgroundColor(Color.rgb(153, 204, 204));
+		rightMenu.setBackgroundColor(Color.rgb(255, 255, 204));
 		middleMask.setBackgroundColor(0x88000000);
 		leftMenu.setId(LEFT_ID);
 		middleMenu.setId(MIDDLE_ID);
@@ -50,6 +50,7 @@ public class MainUI extends FrameLayout {
 		addView(middleMask);
 		addView(rightMenu);
 		middleMask.setAlpha(0);
+
 	}
 
 	@Override

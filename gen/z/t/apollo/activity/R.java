@@ -574,13 +574,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int exit=0x7f06005a;
         public static final int filename=0x7f060053;
         public static final int fileslist=0x7f06001d;
-        public static final int fl_inner=0x7f060054;
+        public static final int fl_inner=0x7f060055;
         public static final int flip=0x7f060008;
         public static final int folder=0x7f060052;
         public static final int gridview=0x7f060009;
         public static final int indicator=0x7f06003e;
         public static final int ivshowpgn=0x7f060016;
-        public static final int listView1=0x7f060059;
+        public static final int listView1=0x7f060054;
         public static final int login=0x7f06003c;
         public static final int mactv=0x7f060018;
         public static final int manualOnly=0x7f060004;
@@ -600,10 +600,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int pullFromEnd=0x7f060002;
         public static final int pullFromStart=0x7f060001;
         public static final int pullUpFromBottom=0x7f060006;
-        public static final int pull_to_refresh_image=0x7f060055;
-        public static final int pull_to_refresh_progress=0x7f060056;
-        public static final int pull_to_refresh_sub_text=0x7f060058;
-        public static final int pull_to_refresh_text=0x7f060057;
+        public static final int pull_to_refresh_image=0x7f060056;
+        public static final int pull_to_refresh_progress=0x7f060057;
+        public static final int pull_to_refresh_sub_text=0x7f060059;
+        public static final int pull_to_refresh_text=0x7f060058;
         public static final int random=0x7f06005f;
         public static final int register=0x7f06003d;
         public static final int remove_page=0x7f060061;
@@ -675,11 +675,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int line=0x7f03001b;
         public static final int list_item=0x7f03001c;
         public static final int login=0x7f03001d;
-        public static final int need_this_for_maven=0x7f03001e;
-        public static final int pull_to_refresh_header_horizontal=0x7f03001f;
-        public static final int pull_to_refresh_header_vertical=0x7f030020;
-        public static final int sensor_detil=0x7f030021;
-        public static final int sensor_list=0x7f030022;
+        public static final int middle_menu=0x7f03001e;
+        public static final int need_this_for_maven=0x7f03001f;
+        public static final int pull_to_refresh_header_horizontal=0x7f030020;
+        public static final int pull_to_refresh_header_vertical=0x7f030021;
+        public static final int sensor_detil=0x7f030022;
+        public static final int sensor_list=0x7f030023;
     }
     public static final class menu {
         public static final int main_option=0x7f0e0000;
