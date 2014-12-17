@@ -52,5 +52,9 @@
     <string name="title_activity_fragment">FragmentActivity</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_socket">SocketActivity</string>
+    <string name="ip">ip</string>
+    <string name="send">send</string>
+    <string name="text">text</string>
 
 </resources>

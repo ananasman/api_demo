@@ -40,6 +40,8 @@ public class SundriesActivity extends ListActivity {
 				TabNavActivity.ACTION)));
 		adapter.add(new ListCellData(this, "ListView下拉刷新", new Intent(
 				ListviewRefresActivity.ACTION)));
+		adapter.add(new ListCellData(this, "socket聊天室", new Intent(
+				SocketActivity.ACTION)));
 		// adapter.add(new ListCellData(this, "自定义左右菜单", new Intent(
 		// MenuActivity.ACTION)));
 	}

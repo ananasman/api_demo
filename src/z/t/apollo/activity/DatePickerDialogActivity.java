@@ -3,11 +3,11 @@ package z.t.apollo.activity;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.app.TimePickerDialog.OnTimeSetListener;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -58,6 +58,16 @@ public class DatePickerDialogActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
+
+				TimePickerDialog timePickerDialog = new TimePickerDialog(
+						getApplicationContext(), new OnTimeSetListener() {
+							@Override
+							public void onTimeSet(TimePicker view,
+									int hourOfDay, int minute) {
+							}
+						}, 10, 10, true);
+				timePickerDialog.show();
+
 				new TimePickerDialog(DatePickerDialogActivity.this,
 						new TimePickerDialog.OnTimeSetListener() {
 

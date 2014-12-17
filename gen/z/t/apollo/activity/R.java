@@ -560,7 +560,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int button13=0x7f06004b;
         public static final int button14=0x7f06004c;
         public static final int button16=0x7f06004f;
-        public static final int button2=0x7f060041;
+        public static final int button2=0x7f06003a;
         public static final int button3=0x7f060014;
         public static final int button4=0x7f060042;
         public static final int button5=0x7f060043;
@@ -578,10 +578,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int flip=0x7f060008;
         public static final int folder=0x7f060052;
         public static final int gridview=0x7f060009;
-        public static final int indicator=0x7f06003e;
+        public static final int indicator=0x7f06003f;
         public static final int ivshowpgn=0x7f060016;
         public static final int listView1=0x7f060054;
-        public static final int login=0x7f06003c;
+        public static final int login=0x7f06003d;
         public static final int mactv=0x7f060018;
         public static final int manualOnly=0x7f060004;
         public static final int mlv=0x7f06002b;
@@ -593,8 +593,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int none=0x7f06000d;
         public static final int option=0x7f06005d;
         public static final int orientation=0x7f06005e;
-        public static final int pager=0x7f06003f;
-        public static final int password=0x7f06003b;
+        public static final int pager=0x7f060040;
+        public static final int password=0x7f06003c;
         public static final int pbpercent=0x7f060032;
         public static final int pullDownFromTop=0x7f060005;
         public static final int pullFromEnd=0x7f060002;
@@ -605,7 +605,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int pull_to_refresh_sub_text=0x7f060059;
         public static final int pull_to_refresh_text=0x7f060058;
         public static final int random=0x7f06005f;
-        public static final int register=0x7f06003d;
+        public static final int register=0x7f06003e;
         public static final int remove_page=0x7f060061;
         public static final int rotate=0x7f060007;
         public static final int savetext=0x7f060020;
@@ -618,7 +618,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int sensor_detil=0x7f06002d;
         public static final int sensor_list=0x7f06002c;
         public static final int setting=0x7f06005c;
-        public static final int tableRow1=0x7f060040;
+        public static final int tableRow1=0x7f060041;
         public static final int tableRow11=0x7f060049;
         public static final int tableRow12=0x7f06004d;
         public static final int tableRow6=0x7f060044;
@@ -633,7 +633,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tvpercent=0x7f060033;
         public static final int tvshowtxt=0x7f060015;
         public static final int underline=0x7f06000f;
-        public static final int username=0x7f06003a;
+        public static final int username=0x7f06003b;
         public static final int viewpager=0x7f06000c;
         public static final int webview=0x7f06000a;
     }
@@ -667,20 +667,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_seek_bar=0x7f030013;
         public static final int activity_sensor=0x7f030014;
         public static final int activity_shared_preferences=0x7f030015;
-        public static final int activity_sqlite=0x7f030016;
-        public static final int activity_tab_nav=0x7f030017;
-        public static final int activity_table_layout=0x7f030018;
-        public static final int fragment_book_detail=0x7f030019;
-        public static final int left_menu=0x7f03001a;
-        public static final int line=0x7f03001b;
-        public static final int list_item=0x7f03001c;
-        public static final int login=0x7f03001d;
-        public static final int middle_menu=0x7f03001e;
-        public static final int need_this_for_maven=0x7f03001f;
-        public static final int pull_to_refresh_header_horizontal=0x7f030020;
-        public static final int pull_to_refresh_header_vertical=0x7f030021;
-        public static final int sensor_detil=0x7f030022;
-        public static final int sensor_list=0x7f030023;
+        public static final int activity_socket=0x7f030016;
+        public static final int activity_sqlite=0x7f030017;
+        public static final int activity_tab_nav=0x7f030018;
+        public static final int activity_table_layout=0x7f030019;
+        public static final int fragment_book_detail=0x7f03001a;
+        public static final int left_menu=0x7f03001b;
+        public static final int line=0x7f03001c;
+        public static final int list_item=0x7f03001d;
+        public static final int login=0x7f03001e;
+        public static final int middle_menu=0x7f03001f;
+        public static final int need_this_for_maven=0x7f030020;
+        public static final int pull_to_refresh_header_horizontal=0x7f030021;
+        public static final int pull_to_refresh_header_vertical=0x7f030022;
+        public static final int sensor_detil=0x7f030023;
+        public static final int sensor_list=0x7f030024;
     }
     public static final class menu {
         public static final int main_option=0x7f0e0000;
@@ -698,6 +699,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int editText1=0x7f080027;
         public static final int exit=0x7f08001d;
         public static final int hello_world=0x7f080007;
+        public static final int ip=0x7f08003a;
         public static final int login=0x7f08002a;
         public static final int mactv=0x7f08001b;
         public static final int orientation=0x7f080020;
@@ -713,7 +715,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int pull_to_refresh_release_label=0x7f080001;
         public static final int register=0x7f08002b;
         public static final int savetext=0x7f080026;
+        public static final int send=0x7f08003b;
         public static final int setting=0x7f08001f;
+        public static final int text=0x7f08003c;
         public static final int title_activity_action_bar=0x7f080015;
         public static final int title_activity_adapter_view=0x7f080018;
         public static final int title_activity_assets=0x7f080022;
@@ -741,6 +745,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int title_activity_seek_bar=0x7f080010;
         public static final int title_activity_sensor=0x7f080034;
         public static final int title_activity_shared_preferences=0x7f080023;
+        public static final int title_activity_socket=0x7f080039;
         public static final int title_activity_sqlite=0x7f080029;
         public static final int title_activity_sundries=0x7f080013;
         public static final int title_activity_tab_nav=0x7f080030;
