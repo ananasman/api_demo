@@ -5,7 +5,6 @@ import java.util.List;
 import z.t.apollo.fragment.SensorDetilFragment;
 import z.t.apollo.fragment.SensorListFragment;
 import z.t.apollo.fragment.SensorListFragment.CallBack;
-
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -14,7 +13,6 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.util.Log;
 
 public class MotionSensorActivity extends Activity implements
 		SensorEventListener, CallBack {

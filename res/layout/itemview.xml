@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<z.t.apollo.activity.MyView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/z.t.apollo.activity"
+    android:id="@+id/myview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:text="dddd"
+    app:textColor="#FFFFFFFF"
+    app:textSize="26sp" />

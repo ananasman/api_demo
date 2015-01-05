@@ -27,7 +27,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>
             -->
         </activity>
         <activity
@@ -307,7 +307,7 @@
                 <!--
                      <action android:name="z.t.apollo.activity.MenuActivity" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
                 -->
                 <action android:name="android.intent.action.MAIN" />
 
@@ -319,6 +319,24 @@
             android:label="@string/title_activity_socket" >
             <intent-filter>
                 <action android:name="z.t.apollo.activity.SocketActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RatingBarActivity"
+            android:label="@string/title_activity_rating_bar" >
+            <intent-filter>
+                <action android:name="z.t.apollo.activity.RatingBarActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyViewActivity"
+            android:label="@string/title_activity_my_view" >
+            <intent-filter>
+                <action android:name="z.t.apollo.activity.MyViewActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

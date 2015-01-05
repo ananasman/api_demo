@@ -42,6 +42,8 @@ public class SundriesActivity extends ListActivity {
 				ListviewRefresActivity.ACTION)));
 		adapter.add(new ListCellData(this, "socket聊天室", new Intent(
 				SocketActivity.ACTION)));
+		adapter.add(new ListCellData(this, "自定义VIEW", new Intent(
+				MyViewActivity.ACTION)));
 		// adapter.add(new ListCellData(this, "自定义左右菜单", new Intent(
 		// MenuActivity.ACTION)));
 	}

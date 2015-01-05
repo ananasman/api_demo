@@ -3,7 +3,6 @@ package z.t.apollo.activity;
 import z.t.apollo.adapter.FragmentAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 
 import com.viewpagerindicator.TitlePageIndicator;
 

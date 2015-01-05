@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class ProgressBarActivity extends ListActivity {
-	
+
 	public static final String ACTION = "z.t.apollo.activity.ProgressBarActivity";
 	private ArrayAdapter<ListCellData> adapter;
 
@@ -21,6 +21,8 @@ public class ProgressBarActivity extends ListActivity {
 		setListAdapter(adapter);
 		adapter.add(new ListCellData(this, "SeekBar", new Intent(
 				SeekBarActivity.ACTION)));
+		adapter.add(new ListCellData(this, "RatingBar", new Intent(
+				RatingBarActivity.ACTION)));
 	}
 
 	@Override

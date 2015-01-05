@@ -56,5 +56,7 @@
     <string name="ip">ip</string>
     <string name="send">send</string>
     <string name="text">text</string>
+    <string name="title_activity_rating_bar">RatingBarActivity</string>
+    <string name="title_activity_my_view">MyViewActivity</string>
 
 </resources>
